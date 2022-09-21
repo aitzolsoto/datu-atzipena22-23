@@ -1,12 +1,15 @@
 package dambi;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/*Programa honek xanadu.txt fitxategiko bytez byte irakurtzen du eta outagain.txt izeneko fitxategian idazten du */
+/*Programa honek xanadu.txt fitxategiko bytez byte irakurtzen du eta outagain.txt izeneko fitxategian idazten du, ez bada irakurri behar den fitxategia aurkitzen mezu bat erakusten du,
+ * fitxategia ez dela aurkitu adieraziz.
+*/
 
-public class CopyBytes {
+public class CopyBytesFNEKontrolatuz {
     public static void main(String[] args) throws IOException {
 
         FileInputStream in = null;
@@ -20,6 +23,8 @@ public class CopyBytes {
             while ((c = in.read()) != -1) {
                 out.write(c);
             }
+        }catch(FileNotFoundException e){
+            System.out.println("Ez da fitxategia aurkitu");
         } finally {
             if (in != null) {
                 in.close();

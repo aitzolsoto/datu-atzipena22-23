@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/*Programa honek xanadu.txt fitxategia karakterez karaktere irakurtzen du eta characteroutput.txt izeneko fitxategian idazten du baina kasu honetan maiuskulaz,*/
 
 public class CopyCharactersMaiuskulaz {
     public static void main(String[] args) throws IOException {
