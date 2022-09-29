@@ -1,8 +1,7 @@
 package dambi;
 
-import java.io.BufferedWriter;
+
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -64,7 +63,7 @@ public class Main {
     }
 
     private static void fitxategiaSortu() throws IOException{
-        System.out.print("Zer zoaz deskribatzera: ");
+        System.out.print("Zer zoaz deskribatzera(Ugaztuna,Arraina,Barazkia,Esnekia): ");
         String karpeta = in.next();
         System.out.print("Zein: ");
         String fitxategia = in.next();
@@ -72,18 +71,15 @@ public class Main {
         in.nextLine();
         String deskribapena = in.nextLine();
 
-        System.out.println("Karpeta: " + karpeta);
-        System.out.println("Fitxategia: " + fitxategia);
-        System.out.println("Deskribapena: " + deskribapena);
-        if(karpeta.equals("ugaztuna") || karpeta.equals("arraina")){
+        if(karpeta.toLowerCase().equals("ugaztuna") || karpeta.toLowerCase().equals("arraina")){
             File f = new File("C:\\Users\\soto.aitzol\\Desktop\\datu-atzipena22-23\\1-Fitxategiak\\fileio\\src\\karpeta berriak\\animaliak" + "\\" + karpeta + "k\\" + fitxategia + ".txt");
             if(f.createNewFile()){
                 System.out.println("Fitxategia sortu da: " + f.getName());
-                BufferedWriter out = new BufferedWriter(new FileWriter(f));
+                PrintWriter out = new PrintWriter(f);
                 out.write(deskribapena);
                 out.close();
             }
-        }else if(karpeta.equals("barazkia") || karpeta.equals("esnekia")){
+        }else if(karpeta.toLowerCase().equals("barazkia") || karpeta.toLowerCase().equals("esnekia")){
             File f = new File("C:\\Users\\soto.aitzol\\Desktop\\datu-atzipena22-23\\1-Fitxategiak\\fileio\\src\\karpeta berriak\\elikagaiak" + "\\" + karpeta + "k\\" + fitxategia + ".txt");
             if(f.createNewFile()){
                 System.out.println("Fitxategia sortu da: " + f.getName());
@@ -92,7 +88,7 @@ public class Main {
                 out.close();
             }
         }else{
-            System.out.println("Ez da sortu");
+            System.out.println("Fitxategia ez da sortu,ez da karpeta aurkitu");
         }
     }
 
