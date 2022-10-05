@@ -10,16 +10,7 @@ import jakarta.xml.bind.Marshaller;
 import dambi.business.Countries;
 import dambi.business.Country;
 
-
-
-/**
- * Simple example of usage of jaxb marshaling functionalities showing how to manage lists
- * 
- * @author dgutierrez-diez
- */
-public class JaxBExampleList
-{
-
+public class JaxBCountries {
     public static void main( String[] args )
     {
         try
@@ -29,23 +20,23 @@ public class JaxBExampleList
             Country spain = new Country();
             spain.setName( "Spain" );
             spain.setCapital( "Madrid" );
-            spain.setImportance(1);
             spain.setContinent( "Europe" );
-
-            spain.setFoundation( LocalDate.of( 1469, 10, 19 ) );
 
             Country usa = new Country();
             usa.setName( "USA" );
             usa.setCapital( "Washington" );
             usa.setContinent( "America" );
-            usa.setImportance(0);
 
+            Country japan = new Country();
+            japan.setName( "Japan" );
+            japan.setCapital( "Tokyo" );
+            japan.setContinent( "Asia" );
 
-            usa.setFoundation( LocalDate.of( 1776, 7, 4 ) );
 
             Countries countries = new Countries();
-            countries.add( spain );
-            countries.add( usa );
+            countries.add(spain);
+            countries.add(usa);
+            countries.add(japan);
 
             /* init jaxb marshaler */
             JAXBContext jaxbContext = JAXBContext.newInstance( Countries.class );
@@ -55,7 +46,7 @@ public class JaxBExampleList
             jaxbMarshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true );
 
             /* marshaling of java objects in xml (output to file and standard output) */
-            jaxbMarshaller.marshal( countries, new File( "list_countries.xml" ) );
+            jaxbMarshaller.marshal( countries, new File( "countries.xml"));
             jaxbMarshaller.marshal( countries, System.out );
 
         }

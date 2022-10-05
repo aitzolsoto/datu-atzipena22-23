@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Countries>
+    <Country importance="0">
+        <Country_Name>Spain</Country_Name>
+        <Country_Continent>Europe</Country_Continent>
+        <Country_Population>0</Country_Population>
+        <Country_Capital>Madrid</Country_Capital>
+    </Country>
+    <Country importance="0">
+        <Country_Name>USA</Country_Name>
+        <Country_Continent>America</Country_Continent>
+        <Country_Population>0</Country_Population>
+        <Country_Capital>Washington</Country_Capital>
+    </Country>
+    <Country importance="0">
+        <Country_Name>Japan</Country_Name>
+        <Country_Continent>Asia</Country_Continent>
+        <Country_Population>0</Country_Population>
+        <Country_Capital>Tokyo</Country_Capital>
+    </Country>
+</Countries>
