@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MendiakCX",
+            "request": "launch",
+            "mainClass": "dambi.MendiakCX",
+            "projectName": "mendienxmlak"
+        },
+        {
+            "type": "java",
+            "name": "Launch MendiakXml",
+            "request": "launch",
+            "mainClass": "dambi.MendiakXml",
+            "projectName": "mendienxmlak"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnmarshalMendia",
+            "request": "launch",
+            "mainClass": "dambi.UnmarshalMendia",
+            "projectName": "mendienxmlak"
+        },
+        {
+            "type": "java",
+            "name": "Launch MendiaXml",
+            "request": "launch",
+            "mainClass": "main.java.dambi.MendiaXml",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Mendiaxml",
+            "request": "launch",
+            "mainClass": "main.java.dambi.Mendiaxml",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch MendiakXml",
+            "request": "launch",
+            "mainClass": "main.java.dambi.MendiakXml",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "dambi.App",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleAdapter",
+            "request": "launch",
+            "mainClass": "dambi.adapter.JaxBExampleAdapter",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBCountries",
+            "request": "launch",
+            "mainClass": "dambi.marshal.JaxBCountries",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleList",
+            "request": "launch",
+            "mainClass": "dambi.marshal.JaxBExampleList",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleSimple",
+            "request": "launch",
+            "mainClass": "dambi.marshal.JaxBExampleSimple",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnMarshalJAXVBCompleteExample",
+            "request": "launch",
+            "mainClass": "dambi.unmarshal.UnMarshalJAXVBCompleteExample",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleXSD",
+            "request": "launch",
+            "mainClass": "dambi.xsd.JaxBExampleXSD",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleXSDErrorHandler",
+            "request": "launch",
+            "mainClass": "dambi.xsd.JaxBExampleXSDErrorHandler",
+            "projectName": "jaxb"
+        },
+        {
+            "type": "java",
+            "name": "Launch JaxBExampleXSDValidation",
+            "request": "launch",
+            "mainClass": "dambi.xsd.JaxBExampleXSDValidation",
+            "projectName": "jaxb"
+        }
+    ]
+}
