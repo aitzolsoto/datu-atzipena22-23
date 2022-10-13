@@ -1,10 +1,14 @@
 package dambi;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
 import javax.json.Json;
 import javax.json.JsonObject;
+import javax.json.JsonWriter;
 
 public class JsonExampleAriketa {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         JsonObject model = Json.createObjectBuilder()
         .add("menu",Json.createObjectBuilder()
             .add("id", "file")
@@ -22,6 +26,10 @@ public class JsonExampleAriketa {
                     .add("onclick", "CreateNewDoc()"))))) 
         .build();
         System.out.println(model);
+
+        try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("data/Irteera.json"))) {
+            jsonWriter.writeObject(model);
+         }
 
     }
 }
