@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia>
+        <Id>0</Id>
+        <Mendia>Urkiola</Mendia>
+        <Altuera>1011</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Id>1</Id>
+        <Mendia>Aitzkorri</Mendia>
+        <Altuera>1530</Altuera>
+        <Probintzia>Guipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Id>2</Id>
+        <Mendia>Saioa</Mendia>
+        <Altuera>1418</Altuera>
+        <Probintzia>Nafarroa</Probintzia>
+    </Mendia>
+</Mendiak>
