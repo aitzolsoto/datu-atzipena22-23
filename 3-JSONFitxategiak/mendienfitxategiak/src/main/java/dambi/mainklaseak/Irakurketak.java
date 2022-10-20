@@ -17,7 +17,15 @@ public class Irakurketak {
         //Mendiak mendiakXml = xmla.irakurri();
         //System.out.println(xmla.idatzi(mendiakXml) + " mendi idatzi dira");
 
-        Jsona jsona = new Jsona("data/Mendiak.json");
-        jsona.irakurri();
+        Jsona jsona = new Jsona("data/Mendiak.json","data/Gipuzkoakoak.json");
+        Mendiak mendiGuztiak = jsona.irakurri();
+        Mendiak gipuzkoakoakJson = new Mendiak();
+        for(int i = 0;i < mendiGuztiak.getMendiak().size();i++){
+            if(mendiGuztiak.getMendiak().get(i).getProbintzia().equals("Gipuzkoa")){
+                gipuzkoakoakJson.add(mendiGuztiak.getMendiak().get(i));
+            }
+        }
+        jsona.idatzi(gipuzkoakoakJson);
+
     }
 }

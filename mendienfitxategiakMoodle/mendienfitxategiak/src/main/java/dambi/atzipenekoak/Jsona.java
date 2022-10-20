@@ -3,6 +3,7 @@ package dambi.atzipenekoak;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
@@ -15,19 +16,31 @@ import dambi.pojoak.Mendia;
 import dambi.pojoak.Mendiak;
 
 public class Jsona {
-    String strFileIn;
-    String strFileOut;
 
-    public Jsona(String strFileIn){
-        this.strFileIn = strFileIn;
+    public String strFileIn;
+    public String strFileOut;
+
+    /**
+     * Konstruktoreak parametro bakarra jasotzen badu,
+     * sarrera fitxategiaren izena jaso dugula suposatuko dugu.
+     */
+    public Jsona(String strFile) {
+        strFileIn = strFile;
     }
 
-    public Jsona(String strFileIn, String strFileOut){
+    /**
+     * Konstruktoreak parametro bi jasotzen baditu,
+     * lehengoa, sarrera fitxategiaren izena dela eta bigarrena irteerakoarena
+     * direla suposatuko dugu.
+     * Sarrera fitxategirik erabiliko ez badugu, kate hutsa erabiliko dugu lehen
+     * parametro moduan.
+     */
+    public Jsona(String strFileIn, String strFileOut) {
         this.strFileIn = strFileIn;
         this.strFileOut = strFileOut;
     }
 
-    public Mendiak irakurri() throws FileNotFoundException{
+    public Mendiak irakurri() {
         Mendiak mendiak = null;
         try {
             JsonReader reader = Json.createReader(new FileReader(strFileIn));
@@ -50,7 +63,7 @@ public class Jsona {
         return mendiak;
     }
 
-    public int idatzi(Mendiak mendiak){
+    public int idatzi(Mendiak mendiak) {
         int mendiKopurua = 0;
         JsonArray model = null;
         JsonArrayBuilder jab = Json.createArrayBuilder();
@@ -71,5 +84,6 @@ public class Jsona {
             System.out.println("Fitxategia sortzerakoan arazoak.");
         }
         return mendiKopurua;
+
     }
 }

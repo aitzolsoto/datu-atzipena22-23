@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia>
+        <Id>3</Id>
+        <Mendia>Alluitz</Mendia>
+        <Altuera>1034</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Id>4</Id>
+        <Mendia>Anboto</Mendia>
+        <Altuera>1331</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Id>15</Id>
+        <Mendia>Mugarra</Mendia>
+        <Altuera>964</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia>
+        <Id>16</Id>
+        <Mendia>Oiz</Mendia>
+        <Altuera>1029</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+</Mendiak>

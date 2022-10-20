@@ -1,0 +1,50 @@
+[
+    {
+        "id": 2,
+        "mendia": "Albertia",
+        "altuera": 868,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 5,
+        "mendia": "Aratz",
+        "altuera": 1443,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 8,
+        "mendia": "Ipizte",
+        "altuera": 1062,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 9,
+        "mendia": "Jarindo",
+        "altuera": 896,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 10,
+        "mendia": "Kapildui",
+        "altuera": 1177,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 14,
+        "mendia": "Mirutegi",
+        "altuera": 1166,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 17,
+        "mendia": "Soila",
+        "altuera": 993,
+        "probintzia": "Araba"
+    },
+    {
+        "id": 18,
+        "mendia": "ToloÃ±o",
+        "altuera": 1263,
+        "probintzia": "Araba"
+    }
+]

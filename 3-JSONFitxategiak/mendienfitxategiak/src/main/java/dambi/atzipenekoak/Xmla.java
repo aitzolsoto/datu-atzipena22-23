@@ -26,7 +26,7 @@ public class Xmla {
          /* init jaxb marshaler */
          Mendiak mendiak = null;
          try{
-            File file = new File( "hirumendi.xml" );
+            File file = new File( strFileIn);
             JAXBContext jaxbContext = JAXBContext.newInstance( Mendiak.class );
 
             /**
